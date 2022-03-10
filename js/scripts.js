@@ -20,4 +20,14 @@
       var result = add(number1, number2);
       $("#output").text(result);
     });
+    $("form#minus").submit(function(event) {
+      event.preventDefault();
+      var number1 = parseInt($("#minus1").val());
+      var number2 = parseInt($("#minus2").val());
+      var result = subtract(number1, number2);
+      $("#output").text(result);
+    });
   });
+
+ 
+
